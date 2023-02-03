@@ -36,7 +36,7 @@ img {
 .container {
     background-color: var(--Very_Dark_Blue);
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -187,4 +187,50 @@ img {
 
 .thank-you-body.hidden, .thank-you-footer.hidden, .thank-you-footer-btn.hidden {
     display: none;
+}
+
+@media only screen and (max-width: 500px){
+    body{
+        display: block;
+    }
+
+    .container{
+        padding: 20px;
+    }
+
+    .card{
+        width: 400px;
+        padding: 20px;
+    }
+
+    .card-header{
+        height: 2.7rem;
+        width: 2.7rem;
+        padding: 13px;
+    }
+
+    .card-body .text > h1{
+        font-size: 25px;
+    }
+
+    .card-body .text > p{
+        font-size: 13px;
+    }
+
+    .card-body .numbers > .btn {
+        height: 2.7rem;
+        width: 2.7rem;
+
+    }
+
+    .thank-you-body .image{
+        width: 46%;
+        margin-bottom: 0;
+    }
+
+    .thank-you-body .rating-text{
+        width: 70%;
+        margin-bottom: 22px;
+    }
+    
 }
